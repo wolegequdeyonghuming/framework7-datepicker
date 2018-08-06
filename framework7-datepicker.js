@@ -12,11 +12,6 @@
  * @param dateFormat  yy-MM-dd, HH:mm:ss  (don't change case! and yy=2018!)
  * @param opt  options(max, min, maxYear, minYear, def)
  * @return mPicker instance, api see framework7.org
- * @e.g:
-    datePicker("input[name=nd]", "yy-MM-dd H:m", {
-        max: new Date(),
-        def: new Date("2018-8-3,2:10")
-    })
  * **/
 window.datePicker = function (selector, dateFormat="yy-MM-dd", opt={}) {
     /*gen opt*/
