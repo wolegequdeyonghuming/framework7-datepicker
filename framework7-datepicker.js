@@ -8,12 +8,13 @@
 
 
 /**
+ * @param f7Instance  your framework7 instance. eg: myApp
  * @param selector  dom selector
  * @param dateFormat  yy-MM-dd, HH:mm:ss  (don't change case! and yy=2018!)
  * @param opt  options(max, min, maxYear, minYear, def)
  * @return mPicker instance, api see framework7.org
  * **/
-window.datePicker = function (selector, dateFormat="yy-MM-dd", opt={}) {
+window.datePicker = function (f7Instance, selector, dateFormat="yy-MM-dd", opt={}) {
     /*gen opt*/
     if(!opt.max)
         opt.max = opt.maxYear ? new Date(opt.maxYear + "-12-31,23:59:59") : new Date("2020-12-31,23:59:59");
@@ -98,7 +99,7 @@ window.datePicker = function (selector, dateFormat="yy-MM-dd", opt={}) {
     });
 
     /*init picker*/
-    let mPicker = Framework7.picker({
+    let mPicker = f7Instance.picker({
 
         input: selector,
 
