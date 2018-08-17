@@ -1,7 +1,7 @@
 /**
  * Framework7 date-picker
  * @charset UTF-8
- * @author xiaoys@sucsoft.com
+ * @author wolegequdeyonghuming@gmail.com
  * @version 1.0.0
  * @require Framework7@1.6.5
  * */
